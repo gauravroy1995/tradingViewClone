@@ -21,11 +21,10 @@ function App() {
             ]
           ],
           "chartOnly": false,
-          "width": 550,
-          "height": 400,
+       
           "locale": "en",
           "colorTheme": "dark",
-          "autosize": false,
+          "autosize": true,
           "showVolume": false,
           "showMA": false,
           "hideDateRanges": false,
@@ -60,7 +59,11 @@ function App() {
   }, []);
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
+    <div
+      className="tradingview-widget-container"
+      ref={container}
+      style={{ flex: 1 }}
+    >
       <div className="tradingview-widget-container__widget"></div>
       <div className="tradingview-widget-copyright">
         <a
