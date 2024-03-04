@@ -14,44 +14,45 @@ function App() {
     script.type = "text/javascript";
     script.async = true;
     script.innerHTML = `
-        {
-          "symbols": [
-            [
-              "BITSTAMP:BTCUSD|1D"
-            ]
-          ],
-          "chartOnly": false,
-       
-          "locale": "en",
-          "colorTheme": "dark",
-          "autosize": true,
-          "showVolume": false,
-          "showMA": false,
-          "hideDateRanges": false,
-          "hideMarketStatus": false,
-          "hideSymbolLogo": false,
-          "scalePosition": "right",
-          "scaleMode": "Normal",
-          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-          "fontSize": "10",
-          "noTimeScale": false,
-          "valuesTracking": "1",
-          "changeMode": "price-and-percent",
-          "chartType": "area",
-          "maLineColor": "#2962FF",
-          "maLineWidth": 1,
-          "maLength": 9,
-          "lineWidth": 2,
-          "lineType": 0,
-          "dateRanges": [
-            "1d|1",
-            "1m|30",
-            "3m|60",
-            "12m|1D",
-            "60m|1W",
-            "all|1M"
-          ]
-        }`;
+    {
+      "symbols": [
+        [
+          "COINBASE:BTCUSD|1D"
+        ]
+      ],
+      "chartOnly": false,
+      "width": "100%",
+      "height": "100%",
+      "locale": "en",
+      "colorTheme": "dark",
+      "autosize": true,
+      "showVolume": false,
+      "showMA": false,
+      "hideDateRanges": false,
+      "hideMarketStatus": false,
+      "hideSymbolLogo": false,
+      "scalePosition": "right",
+      "scaleMode": "Normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+      "fontSize": "10",
+      "noTimeScale": false,
+      "valuesTracking": "1",
+      "changeMode": "price-and-percent",
+      "chartType": "area",
+      "maLineColor": "#2962FF",
+      "maLineWidth": 1,
+      "maLength": 9,
+      "lineWidth": 2,
+      "lineType": 0,
+      "dateRanges": [
+        "1d|1",
+        "1m|30",
+        "3m|60",
+        "12m|1D",
+        "60m|1W",
+        "all|1M"
+      ]
+    }`;
     if (newRef.current === 0) {
       container.current.appendChild(script);
       newRef.current += 1;
@@ -62,7 +63,7 @@ function App() {
     <div
       className="tradingview-widget-container"
       ref={container}
-      style={{ flex: 1 }}
+      style={{ flex: 1, height: "100%", width: "100%" }}
     >
       <div className="tradingview-widget-container__widget"></div>
       <div className="tradingview-widget-copyright">
@@ -71,7 +72,6 @@ function App() {
           rel="noopener nofollow"
           target="_blank"
         ></a>
-        hahdahdahdahd dadada
       </div>
     </div>
   );
