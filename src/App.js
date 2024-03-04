@@ -21,8 +21,8 @@ function App() {
         ]
       ],
       "chartOnly": false,
-      "width": "100%",
-      "height": "100%",
+      "width": "300",
+      "height": "500",
       "locale": "en",
       "colorTheme": "dark",
       "autosize": true,
@@ -63,7 +63,7 @@ function App() {
     <div
       className="tradingview-widget-container"
       ref={container}
-      style={{ flex: 1, height: "100%", width: "100%" }}
+      style={{ width: "200", height: "300", backgroundColor: "red" }}
     >
       <div className="tradingview-widget-container__widget"></div>
       <div className="tradingview-widget-copyright">
