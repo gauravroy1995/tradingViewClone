@@ -80,7 +80,7 @@ function App() {
     script.async = true;
     script.innerHTML = `
         {
-          "autosize": true,
+           "height":"1000",
           "symbol": "BITSTAMP:BTCUSD",
           "interval": "D",
           "timezone": "Etc/UTC",
@@ -102,7 +102,7 @@ function App() {
     <div
       className="tradingview-widget-container"
       ref={container}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "800px", width: "100%", backgroundColor: "black" }}
     >
       <div
         className="tradingview-widget-container__widget"
