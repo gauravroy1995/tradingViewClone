@@ -80,7 +80,7 @@ function App() {
     script.async = true;
     script.innerHTML = `
         {
-           "height":"1000",
+           "height":"400",
           "symbol": "BITSTAMP:BTCUSD",
           "interval": "D",
           "timezone": "Etc/UTC",
